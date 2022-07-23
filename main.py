@@ -853,7 +853,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Aulacened ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_Aulacened ya esta configurada")
         elif '/pv_uclv' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://moodle.uclv.edu.cu/"
@@ -892,7 +892,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Aula Uclv ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_Aula Uclv ya esta configurada")
         elif '/pv_eva' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://eva.uo.edu.cu/"
@@ -904,7 +904,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Eva ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_Eva ya esta configurada")
         elif '/pv_cursos' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://cursos.uo.edu.cu/"
@@ -916,7 +916,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Cursos ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_Cursos ya esta configurada")
         elif '/pub_posgrado' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://posgrado.unica.cu/"
@@ -965,7 +965,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Ismm ya esta configurada")
+            bot.editMessageText(message,"?nube_publica_Ismm ya esta configurada")
         elif '/pv_uvsucm' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://uvs.ucm.cmw.sld.cu/"
@@ -978,7 +978,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_uvs.ucm ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_uvs.ucm ya esta configurada")
         elif '/pv_eduvirtual' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://eduvirtual.uho.edu.cu/"
@@ -990,7 +990,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Eduvirtual ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_Eduvirtual ya esta configurada")
         elif '/pv_aula_gtm' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://aulauvs.gtm.sld.cu/"
@@ -1002,7 +1002,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_aula_gtm ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_aula_gtm ya esta configurada")
         elif '/pv_aula_grm' in msgText:
             getUser = user_info
             getUser['moodle_host'] = " https://aula.ucm.grm.sld.cu/"
@@ -1014,7 +1014,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?/nube_aula_grm ya esta configurada")
+            bot.editMessageText(message,"?/nube_privada_aula_grm ya esta configurada")
         elif '/pv_aula_hlg' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://aulavirtual.hlg.sld.cu/"
@@ -1027,7 +1027,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_aula_hlg ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_aula_hlg ya esta configurada")
         elif '/pv_aula4' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "http://aula4.mtz.sld.cu/"
@@ -1040,7 +1040,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?aula4 ya esta configurada")
+            bot.editMessageText(message,"?nube_privada_aula4 ya esta configurada")
         elif 'http' in msgText:
             url = msgText
             ddl(update,bot,message,url,file_name='',thread=thread,jdb=jdb)
