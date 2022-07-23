@@ -879,7 +879,7 @@ def onmessage(update,bot:ObigramClient):
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Uclv_pv ya esta configurada")
+            bot.editMessageText(message,"?nube_Uclv_pub ya esta configurada")
         elif '/aula_uclv' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://aula.uclv.edu.cu/"
