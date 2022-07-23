@@ -867,19 +867,6 @@ def onmessage(update,bot:ObigramClient):
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
             bot.editMessageText(message,"?nube_Uclv_pv ya esta configurada")
-        elif '/uclv_pub' in msgText:
-            getUser = user_info
-            getUser['moodle_host'] = "https://moodle.uclv.edu.cu/"
-            getUser['uploadtype'] =  "calendar"
-            getUser['moodle_user'] = "lglantigua"
-            getUser['moodle_password'] = "Bwmnr2Cd*"
-            getUser['moodle_repo_id'] = 4
-            getUser['zips'] = 350
-            getUser['proxy'] = 'socks5://KKGDJIYKJJLFFIYGDHGDYHJDLGGDRKKJEJIEJELK'
-            jdb.save_data_user(username,getUser)
-            jdb.save()
-            statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Uclv_pub ya esta configurada")
         elif '/aula_uclv' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://aula.uclv.edu.cu/"
