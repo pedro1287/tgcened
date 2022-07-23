@@ -904,18 +904,42 @@ def onmessage(update,bot:ObigramClient):
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
             bot.editMessageText(message,"?nube_Cursos ya esta configurada")
-        elif '/posgrado' in msgText:
+        elif '/pub_posgrado' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "https://posgrado.unica.cu/"
             getUser['uploadtype'] =  "calendar"
-            getUser['moodle_user'] = "zeta6"
+            getUser['moodle_user'] = "zeta5"
             getUser['moodle_password'] = "Zeta2025."
             getUser['moodle_repo_id'] = 3
             getUser['zips'] = 5
             jdb.save_data_user(username,getUser)
             jdb.save()
             statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-            bot.editMessageText(message,"?nube_Posgrado unica ya esta configurada")
+            bot.editMessageText(message,"?nube_publica_posgrado unica ya esta configurada")
+        elif '/pv1_posgrado' in msgText:
+            getUser = user_info
+            getUser['moodle_host'] = "https://posgrado.unica.cu/"
+            getUser['uploadtype'] =  "calendar"
+            getUser['moodle_user'] = "zeta1"
+            getUser['moodle_password'] = "Zeta2025."
+            getUser['moodle_repo_id'] = 3
+            getUser['zips'] = 5
+            jdb.save_data_user(username,getUser)
+            jdb.save()
+            statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
+            bot.editMessageText(message,"?nube_privada1_posgrado unica ya esta configurada")
+        elif '/pv2_posgrado' in msgText:
+            getUser = user_info
+            getUser['moodle_host'] = "https://posgrado.unica.cu/"
+            getUser['uploadtype'] =  "calendar"
+            getUser['moodle_user'] = "zeta3"
+            getUser['moodle_password'] = "Zeta2025."
+            getUser['moodle_repo_id'] = 3
+            getUser['zips'] = 5
+            jdb.save_data_user(username,getUser)
+            jdb.save()
+            statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
+            bot.editMessageText(message,"?nube_privada1_posgrado unica ya esta configurada")
         elif '/ismm' in msgText:
             getUser = user_info
             getUser['moodle_host'] = "http://moodle.ismm.edu.cu/"
