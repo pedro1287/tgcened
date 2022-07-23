@@ -1,0 +1,18 @@
+INFORMACIÓN
+________________(✪)________________
+📦Versión 0.30. Release (2022/7/19)
+
+SIN-PROXY
+/posgrado
+/aulacened
+/uclv
+/eva
+/cursos
+/eduvirtual
+________________(✪)________________
+CON-PROXY
+/ismm
+/uvs
+
+Para eliminar archivos es /delete y el link al lado
+/delete Url
